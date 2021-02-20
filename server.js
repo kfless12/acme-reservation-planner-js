@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const { STRING, ARRAY, FLOAT } = Sequelize;
 const conn = new Sequelize(
-  process.env.DATABASE_URL || 'postgres://localhost/acme_db_reservations'
+  process.env.DATABASE_URL || 'postgres://localhost/acme_db'
 );
 
 const syncAndSeed = async () => {
